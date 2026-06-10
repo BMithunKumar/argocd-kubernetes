@@ -1,8 +1,8 @@
-# Default values for nginx-app
+# Default values for tap-app-app
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: tap-app
   tag: alpine
   pullPolicy: IfNotPresent
 

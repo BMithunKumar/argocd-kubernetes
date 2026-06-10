@@ -1,21 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-dev
+  name: tap-app-staging
   namespace: argo-cd
 spec:
   project: default
   source:
     repoURL: https://github.com/BMithunKumar/argocd-kubernetes.git
     targetRevision: HEAD
-    path: helm/nginx-app
+    path: helm/tap-app-app
     helm:
       valueFiles:
         - values.yaml
-        - values.dev.yaml
+        - values.staging.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev
+    namespace: staging
   syncPolicy:
     automated:
       prune: true

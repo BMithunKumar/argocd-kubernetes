@@ -1,0 +1,5 @@
+apiVersion: v2
+name: tap-app-app
+description: tap-app application with configmap and services
+version: 0.1.0
+appVersion: "1.0"

@@ -4,8 +4,8 @@ replicaCount: 2
 namespace: staging
 
 image:
-  repository: nginx
-  tag: latest
+  repository: BMithunKumar/tap-app    
+  tag: abc123sha                   
 
 configmap:
   name: mithun-staging

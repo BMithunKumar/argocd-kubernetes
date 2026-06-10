@@ -4,8 +4,8 @@ replicaCount: 1
 namespace: dev
 
 image:
-  repository: nginx
-  tag: alpine
+  repository: BMithunKumar/tap-app    
+  tag: abc123sha                   
 
 configmap:
   name: mithun-dev

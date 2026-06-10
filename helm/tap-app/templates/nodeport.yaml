@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-nodeport-{{ .Values.namespace }}
+  name: tap-app-nodeport-{{ .Values.namespace }}
   namespace: {{ .Values.namespace }}
 spec:
   type: NodePort
   selector:
-    project: nginx-{{ .Values.namespace }}
+    project: tap-app-{{ .Values.namespace }}
   ports:
     - port: {{ .Values.service.nodeport.port }}
       targetPort: {{ .Values.service.nodeport.targetPort }}

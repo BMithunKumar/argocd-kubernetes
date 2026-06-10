@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-{{ .Values.namespace }}
+  name: tap-app-{{ .Values.namespace }}
   namespace: {{ .Values.namespace }}
 spec:
   strategy:
@@ -12,14 +12,14 @@ spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      project: nginx-{{ .Values.namespace }}
+      project: tap-app-{{ .Values.namespace }}
   template:
     metadata:
       labels:
-        project: nginx-{{ .Values.namespace }}
+        project: tap-app-{{ .Values.namespace }}
     spec:
       containers:
-        - name: nginx
+        - name: tap-app
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           ports:
             - containerPort: 80
