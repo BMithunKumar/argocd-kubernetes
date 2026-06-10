@@ -3,7 +3,7 @@ replicaCount: 1
 namespace: dev
 image:
   repository: mithunkumarb2026/tap-app
-  tag: e8877ed8197accc4b2b9673ab07e90c8a8472c2e
+  tag: ecedbe29c6a9a08560f836d5ad32d8f32fc0e5c4
 configmap:
   name: mithun-dev
 resources:
