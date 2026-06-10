@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/BMithunKumar/argocd-kubernetes.git
     targetRevision: HEAD
-    path: helm/tap-app-app
+    path: helm/tap-app
     helm:
       valueFiles:
         - values.yaml
