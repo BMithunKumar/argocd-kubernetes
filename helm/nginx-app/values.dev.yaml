@@ -1,0 +1,11 @@
+# Dev environment overrides
+replicaCount: 1
+
+namespace: dev
+
+image:
+  repository: nginx
+  tag: alpine
+
+configmap:
+  name: mithun-dev

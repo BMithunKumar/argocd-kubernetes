@@ -1,0 +1,11 @@
+# Staging environment overrides
+replicaCount: 3
+
+namespace: staging
+
+image:
+  repository: nginx
+  tag: latest
+
+configmap:
+  name: mithun-staging

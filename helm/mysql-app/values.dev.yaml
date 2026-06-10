@@ -1,0 +1,25 @@
+# Dev environment overrides
+namespace: dev
+
+replicaCount: 1
+
+storage:
+  size: 2Gi
+  className: standard
+
+resources:
+  requests:
+    cpu: 250m
+    memory: 512Mi
+  limits:
+    cpu: "1"
+    memory: 1Gi
+
+quota:
+  cpu:
+    requests: "2"
+    limits: "4"
+  memory:
+    requests: 4Gi
+    limits: 8Gi
+  pods: "10"

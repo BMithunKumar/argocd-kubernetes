@@ -1,0 +1,25 @@
+# Staging environment overrides
+namespace: staging
+
+replicaCount: 1
+
+storage:
+  size: 5Gi
+  className: standard
+
+resources:
+  requests:
+    cpu: 500m
+    memory: 1Gi
+  limits:
+    cpu: "2"
+    memory: 2Gi
+
+quota:
+  cpu:
+    requests: "4"
+    limits: "8"
+  memory:
+    requests: 8Gi
+    limits: 16Gi
+  pods: "20"

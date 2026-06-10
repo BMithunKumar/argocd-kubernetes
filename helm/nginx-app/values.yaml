@@ -1,0 +1,21 @@
+# Default values for nginx-app
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: alpine
+  pullPolicy: IfNotPresent
+
+namespace: default
+
+configmap:
+  name: mithun
+
+service:
+  clusterip:
+    port: 80
+    targetPort: 80
+  nodeport:
+    port: 80
+    targetPort: 80
+    nodePort: 30002

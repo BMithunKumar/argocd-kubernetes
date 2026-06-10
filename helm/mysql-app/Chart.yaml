@@ -1,0 +1,5 @@
+apiVersion: v2
+name: mysql-app
+description: MySQL StatefulSet with secret, PVC, headless service and resource quota
+version: 0.1.0
+appVersion: "8.0"

@@ -1,0 +1,36 @@
+# Default values for mysql-app
+namespace: default
+
+image:
+  repository: mysql
+  tag: "8.0"
+
+replicaCount: 1
+
+database:
+  name: appdb
+
+storage:
+  size: 5Gi
+  className: standard
+
+resources:
+  requests:
+    cpu: 250m
+    memory: 512Mi
+  limits:
+    cpu: "1"
+    memory: 1Gi
+
+quota:
+  cpu:
+    requests: "4"
+    limits: "8"
+  memory:
+    requests: 8Gi
+    limits: 16Gi
+  pods: "20"
+  services: "10"
+  pvcs: "5"
+  configmaps: "20"
+  secrets: "20"
