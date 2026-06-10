@@ -1,15 +1,11 @@
 # Dev environment overrides
 replicaCount: 1
-
 namespace: dev
-
 image:
-  repository: BMithunKumar/tap-app    
-  tag: abc123sha                   
-
+  repository: mithunkumarb2026/tap-app
+  tag: e8877ed8197accc4b2b9673ab07e90c8a8472c2e
 configmap:
   name: mithun-dev
-
 resources:
   requests:
     cpu: 100m
