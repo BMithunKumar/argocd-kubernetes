@@ -15,10 +15,6 @@ service:
   clusterip:
     port: 80
     targetPort: 80
-  nodeport:
-    port: 80
-    targetPort: 80
-    nodePort: 30002
 
 
 resources:
