@@ -1,5 +1,5 @@
 # Staging environment overrides
-replicaCount: 5
+replicaCount: 2
 
 namespace: staging
 
@@ -10,7 +10,16 @@ image:
 configmap:
   name: mithun-staging
 
-esources:
+service:
+  clusterip:
+    port: 80
+    targetPort: 80
+  nodeport:
+    port: 80
+    targetPort: 80
+    nodePort: 30003
+
+resources:
   requests:
     cpu: 200m
     memory: 256Mi
