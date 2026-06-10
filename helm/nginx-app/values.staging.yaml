@@ -10,6 +10,15 @@ image:
 configmap:
   name: mithun-staging
 
+service:
+  clusterip:
+    port: 80
+    targetPort: 80
+  nodeport:
+    port: 80
+    targetPort: 80
+    nodePort: 30003
+
 resources:
   requests:
     cpu: 200m
