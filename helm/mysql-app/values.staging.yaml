@@ -1,7 +1,7 @@
 # Staging environment overrides
 namespace: staging
 
-replicaCount: 1
+replicaCount: 3
 
 storage:
   size: 5Gi
