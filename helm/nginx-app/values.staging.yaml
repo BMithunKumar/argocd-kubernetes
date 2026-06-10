@@ -1,5 +1,5 @@
 # Staging environment overrides
-replicaCount: 3
+replicaCount: 5
 
 namespace: staging
 
